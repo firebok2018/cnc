@@ -1,0 +1,67 @@
+﻿.accordion {
+	background:transparent;
+	font-family:Arial;
+	font-size:8pt;
+	line-height:20px;
+	color: white;
+	
+}
+
+.accordion a
+{
+	color:Black;
+	margin-left:0px;
+}
+
+.accordion .header, .accordion .HeaderSelected {
+	background:transparent url('https://intranet.cibertec.edu.pe/LoginIntranet/images/fondos/hd_bg.gif') repeat-x scroll 0%;
+	cursor:pointer;
+	height:30px;
+	text-align:left;
+}
+
+.accordion .HeaderSelected
+{
+	background:transparent url('https://intranet.cibertec.edu.pe/LoginIntranet/images/fondos/hd_sel_bg.gif') repeat-x scroll 0%;
+}
+
+.accordion .header div, .accordion .HeaderSelected div {
+	cursor:pointer;
+	height:30px;
+	margin: auto;
+	width: 170px;
+	padding-left: 5px;
+	text-align:left;
+	
+}
+.accordion .header a, .accordion .HeaderSelected a {
+	color:white;
+	cursor:pointer;
+	display:block;
+	font-weight:bold;
+	padding-top:8px;
+	text-decoration: none;
+	
+}
+
+.accordion .header:hover, .accordion .HeaderSelected:hover {
+	background:transparent url('https://intranet.cibertec.edu.pe/LoginIntranet/images/fondos/hd_hover_bg.gif') repeat-x scroll 0%;
+	cursor:pointer;
+}
+
+.accordion .header:hover a, .accordion .HeaderSelected:hover a
+{
+	text-decoration: underline;
+}
+
+/*a
+{
+	color: White;
+}*/
+
+
+.fondoaccordion
+{
+	/*width: 187px; background:transparent url('../images/fondos/item_bg.gif') repeat-y scroll 0%; float: left; margin-left: 0px;*/
+	width: 170px; background:transparent url('https://intranet.cibertec.edu.pe/LoginIntranet/images/fondos/item_bg.gif') repeat-y scroll 0%; float: left; margin-left: 0px;
+}

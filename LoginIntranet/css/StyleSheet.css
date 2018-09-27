@@ -1,0 +1,40 @@
+﻿.banner
+{
+	background-image: url('../images/bannerIntranet.JPG');/*ss-2012-057*/
+	height:90px;
+	widows:800px;
+	width:100%;
+	background-repeat: no-repeat;
+}
+
+body
+{
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #ffffff;
+	margin: 0; /* es recomendable ajustar a cero el margen y el relleno del elemento body para lograr la compatibilidad con la configuración predeterminada de los diversos navegadores */
+	padding: 0;
+	text-align: center; /* esto centra el contenedor en los navegadores IE 5*. El texto se ajusta posteriormente con el valor predeterminado de alineación a la izquierda en el selector #container */
+}
+
+.pie
+{
+	height: 50px; 
+	text-align:center; 
+	font-family:Arial; 
+	font-size:7.5pt; 
+	color:#858584 ; 
+	width:780px; 
+}
+
+.MensajeError
+{
+	color: red;
+	font-family:Arial;
+	font-size: 12px;	
+}
+.MensajeError2
+{
+	color: red;
+	font-family:Arial;
+	font-size: 13px;	
+}

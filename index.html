@@ -1,0 +1,329 @@
+
+<html lang="es" xml:lang="es" xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_sHead"><title>
+	Login CIBERTEC
+</title><link href="LoginIntranet/css/Default.css" rel="stylesheet" type="text/css" /><link href="LoginIntranet/css/StyleSheet.css" rel="stylesheet" type="text/css" /><link href="LoginIntranet/css/commonCIBERTEC.css" rel="stylesheet" type="text/css" />
+    
+    
+    <script type="text/javascript">
+        if(history.forward(1)) {location.replace(history.forward(1))}
+    </script> 
+
+    <script language="javascript" type="text/javascript">
+        function Page_onInit() {
+            try {
+		        Page_onLoad();
+	        } catch(e) {}
+        }
+
+        function SoloNumeros(e) {
+            var key;
+            var keychar;
+
+            if (window.event)
+                key = window.event.keyCode;
+            else if (e)
+                key = e.which;
+            else
+                return true;
+            keychar = String.fromCharCode(key);
+
+            // teclas de control
+            if ((key == null) || (key == 0) || (key == 8) || (key == 9) || (key == 13) || (key == 27))
+                return true;
+            // Numeros
+            else if ((("0123456789").indexOf(keychar) > -1))
+                return true;
+            else
+                return false;
+        }
+    </script>
+    
+    
+
+    <script language="javascript" type="text/javascript">
+        function Page_onLoad() {
+            document.getElementById("ctl00_ContentPlaceHolder1_Login1_UserName").focus();
+        }
+
+        function InvocarForm()
+        {
+            var usuario=document.getElementById("ctl00_ContentPlaceHolder1_Login1_UserName");
+            var password=document.getElementById("ctl00_ContentPlaceHolder1_Login1_Password");
+            
+            var fvusr=document.getElementById("ctl00_ContentPlaceHolder1_Login1_UserNameRequired");
+            var fvpwd=document.getElementById("ctl00_ContentPlaceHolder1_Login1_PasswordRequired");
+            
+            if (usuario.value=="")
+            {
+                document.getElementById("ctl00_ContentPlaceHolder1_lblError").innerHTML = "";
+                alert ("Por favor, ingresa tu usuario");
+                ValidatorEnable(fvusr, true);
+                ValidatorEnable(fvpwd, false);
+                usuario.focus();
+            }else{
+                if (password.value=="")
+                    {
+                        document.getElementById("ctl00_ContentPlaceHolder1_lblError").innerHTML = "";
+                        alert ("Por favor, ingresa tu contraseña");
+                        ValidatorEnable(fvusr, false);
+                        ValidatorEnable(fvpwd, true);
+                        password.focus();
+                    }
+            }
+
+            document.getElementById("ctl00_ContentPlaceHolder1_Login1_LoginButton").click();
+        }
+        
+        function obtenerKey(e) {
+            var code;
+	        if (!e) var e = window.event;
+	        if (e.keyCode) code = e.keyCode;
+	        else if (e.which) code = e.which;
+    	
+	        return code;
+
+        }
+        function UserName_OnKeyPress(e, obj) {
+            var usuario=document.getElementById("ctl00_ContentPlaceHolder1_Login1_UserName");
+            var password=document.getElementById("ctl00_ContentPlaceHolder1_Login1_Password");
+            var btnIngresar=document.getElementById("ctl00_ContentPlaceHolder1_Login1_LoginButton");
+            var key = obtenerKey(e);
+            if (key == 13) {
+                if (password.value == "") 
+                    password.focus();
+                else
+                    btnIngresar.click();
+            }
+        }
+        function Password_OnKeyPress(e, obj) {
+            var usuario=document.getElementById("ctl00_ContentPlaceHolder1_Login1_UserName");
+            var password=document.getElementById("ctl00_ContentPlaceHolder1_Login1_Password");
+            var btnIngresar=document.getElementById("ctl00_ContentPlaceHolder1_Login1_LoginButton");
+            var key = obtenerKey(e);
+            if (key == 13) {
+                if (usuario.value == "") 
+                    usuario.focus();
+                else
+                    btnIngresar.click();
+            }
+        }
+    </script>
+    
+</head>
+<body oncontextmenu="return false" onload="Page_onInit();" style="margin-left: 0px;
+    margin-top: 0px; margin-right: 0px; background-color: #ffffff; margin-bottom: 0px;
+    text-align: center;">
+    <form name="aspnetForm" method="post" action="index.html" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTQ3MDE2NTU3Nw9kFgJmD2QWAgIDD2QWAgIBD2QWBGYPZBYCZg9kFgICAQ8PFgIeBFRleHQFCEludHJhbmV0ZGQCAQ8PFgIfAGVkZGQy0f1OE2tykDOGwvHpXWrJ0Zdr7Q==" />
+
+        <table border="0" cellpadding="0" cellspacing="0" height="100%" width="100%">
+            <tr>
+                <td align="center" height="12%">
+                    <div class="WEB_contenedorCabecera">
+                        <div class="WEB_logoSocrates" style="right: 22px; top: 30px">
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td height="8%">
+                    <table border="0" cellpadding="0" cellspacing="0" height="2%" width="100%">
+                        <tr>
+                            <td>
+                                <br />
+                                <br />
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" height="70%">
+                    <table border="0" cellpadding="0" cellspacing="0" height="70%" width="335px">
+                        <tr valign="top">
+                            <td width="340px">
+                            </td>
+                            <td style="background-color: #ffffff; height: auto; padding: 18px 0 10px 0;" valign="top">
+                                
+
+        <table id="ctl00_ContentPlaceHolder1_Login1" cellspacing="0" cellpadding="0" bordercolor="#E8E8E8" border="0" bgcolor="#E8E8E8">
+	<tr>
+		<td><font face="Verdana" size="2">
+                <table border="0" cellpadding="0" cellspacing="0" style="width: 336px; height: 70%;
+                    background-color: #e8e8e8">
+                    <tr>
+                        <td>
+                            <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td>
+                                        <img align="absMiddle" alt="" src="LoginIntranet/images/otra1.GIF" />
+                                    </td>
+                                    <td style="background-image: url(LoginIntranet/images/otra2.GIF); width: 296px; text-align: left;
+                                        padding-top: 7px; background-color: #e8e8e8;">
+                                        <font color="white" face="times new roman" size="5">Ingreso a la
+                                            <span id="ctl00_ContentPlaceHolder1_Login1_lblTitulo">Intranet</span></font></td>
+                                    <td>
+                                        <img align="absMiddle" alt="" src="LoginIntranet/images/otra3.GIF" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 161px; height: 19px; background-color: #e8e8e8">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table align="center" border="0">
+                                <tr style="height: 40px;">
+                                    <td align="left" class="textoBold" style="width: 98px;" valign="middle">
+                                        <label for="ctl00_ContentPlaceHolder1_Login1_UserName" id="ctl00_ContentPlaceHolder1_Login1_UserNameLabel">Usuario</label>
+                                    </td>
+                                    <td style="width: 170px" valign="middle">
+                                        <input name="ctl00$ContentPlaceHolder1$Login1$UserName" type="text" maxlength="10" id="ctl00_ContentPlaceHolder1_Login1_UserName" class="WEB_cajaLogin" onKeyPress="UserName_OnKeyPress(event, this);" />
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr style="height: 40px;">
+                                    <td align="left" class="textoBold" valign="middle">
+                                        <label for="ctl00_ContentPlaceHolder1_Login1_Password" id="ctl00_ContentPlaceHolder1_Login1_PasswordLabel">Contraseña</label>
+                                    </td>
+                                    <td valign="middle">
+                                        <input name="ctl00$ContentPlaceHolder1$Login1$Password" type="password" maxlength="20" id="ctl00_ContentPlaceHolder1_Login1_Password" class="WEB_cajaLogin" onKeyPress="Password_OnKeyPress(event, this);" />
+                                        &nbsp;
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 98px">
+                                        <input type="submit" name="ctl00$ContentPlaceHolder1$Login1$LoginButton" value="Log In" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;ctl00$ContentPlaceHolder1$Login1$LoginButton&quot;, &quot;&quot;, true, &quot;Login1&quot;, &quot;&quot;, false, false))" id="ctl00_ContentPlaceHolder1_Login1_LoginButton" class="button_login" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr style="height: 42px;">
+                        <td>
+                            <table border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td align="left" class="WEB_texto55" style="padding-left: 5px; height: 27px;">
+                                        Ingresa tu usuario y contraseña.<br />
+                                        Luego da clic en "Entrar" o presione "Enter".<br />
+                                    </td>
+                                    <td align="right" style="width: 117px; height: 27px;">
+                                        
+                                        
+                                           <a href="javascript:InvocarForm();"><img border="0" alt="" src="LoginIntranet/images/estilosimagesbtnEntrar.gif"
+                                           style="cursor: pointer;" /></a>  
+                                        
+                                    </td>
+                                </tr>
+
+                            
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align='center' class="WEB_texto6" colspan="6" style="background-color: #e8e8e8;
+                            padding-left: 10px">
+                            <br />
+                            <a href="LoginIntranet/resetpassword.aspx">
+                            
+                                        <b>
+                                            <font color="#8b8b8b" face="verdana" size="2">
+                                                ¿Olvidaste tu clave?                                            
+                                            </font>
+                                        </b>
+                            </a>
+                            <br />
+                            <br />
+                            <br />
+                        </td>
+                    </tr>
+                    <tr>
+                                    <td align="left" class="WEB_texto55" style="padding-left: 5px; height: 27px;">
+                                        Tu contraseña es importante!<br />
+                                        Recuerda que siempre debe tener:<br />
+                                        - Mínimo 8 caracteres. Máximo 20 caracteres.<br />
+                                        - Una Mayúscula y una minúscula.<br />
+                                        - Un número.<br />
+                                        - No debe contener parte de tu nombre u apellidos.<br />
+                                        <br />
+                                    </td>
+                    </tr>
+                </table>
+            </font></td>
+	</tr>
+</table>
+        <div style="padding-left:8px; text-align:justify;">
+            <span id="ctl00_ContentPlaceHolder1_lblError" class="MensajeError"></span>      
+       </div> 
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdDia" id="ctl00_ContentPlaceHolder1_hdDia" />
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdMes" id="ctl00_ContentPlaceHolder1_hdMes" />
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdAnio" id="ctl00_ContentPlaceHolder1_hdAnio" />
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdHora" id="ctl00_ContentPlaceHolder1_hdHora" />
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdMinuto" id="ctl00_ContentPlaceHolder1_hdMinuto" />
+        <input type="hidden" name="ctl00$ContentPlaceHolder1$hdSegundo" id="ctl00_ContentPlaceHolder1_hdSegundo" />
+
+        <script language="javascript" type="text/javascript"> 
+         
+           var MyNow =  new Date( );
+           document.getElementById("ctl00_ContentPlaceHolder1_hdDia").value= MyNow.getDate() ;
+           document.getElementById("ctl00_ContentPlaceHolder1_hdMes").value= MyNow.getMonth() ;   
+           document.getElementById("ctl00_ContentPlaceHolder1_hdAnio").value= MyNow.getFullYear() ; 
+          
+           document.getElementById("ctl00_ContentPlaceHolder1_hdHora").value= MyNow.getHours()  ; 
+           document.getElementById("ctl00_ContentPlaceHolder1_hdMinuto").value= MyNow.getMinutes();   
+           document.getElementById("ctl00_ContentPlaceHolder1_hdSegundo").value= MyNow.getSeconds() ;          
+         
+        </script>
+
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            
+            <tr bgcolor="#DDDDDD">
+                <td height="7%">
+                    <table border="0">
+                        <tr>
+                            <td valign="middle" width="500px">
+                                <img alt="" src='LoginIntranet/images/logo_foot_cib.gif' />
+                            </td>
+                            <td align="right" width="100%">
+                                <a href="Programas/Ut005.asp" target="_blank">
+                                    <b>
+                                        <font color="#9A9A9A" face="arial" size="1">
+                                            Sugerencias
+                                        </font>
+                                    </b>
+                                </a>
+                                &nbsp;&nbsp;    
+                                <a href="http://www.cibertec.edu.pe/home_cib.aspx" target="_blank">
+                                    <b>
+                                        <font color="#9A9A9A" face="arial" size="1">
+                                            Home CIBERTEC
+                                        </font>
+                                    </b>
+                                </a>
+                                &nbsp;&nbsp; 
+                                <a href="Ayuda/Ayuda.asp" target="_blank">
+                                    <b>
+                                        <font color="#9A9A9A" face="arial" size="1">
+                                            Ayuda
+                                        </font>
+                                    </b>
+                               </a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWCgKPwffLAQK/1YTzDQLu8I/0DgLM97qYBQLSg7TsDQLlnevtBgKvzYqzCwLNtOGYDQKNrajcBALItoaICxrbAqrD0tU1l3QmIbOqMtbJDdXo" /></form>
+</body>
+</html>

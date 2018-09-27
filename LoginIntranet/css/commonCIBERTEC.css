@@ -1,0 +1,172 @@
+﻿.WEB_contenedorCabecera{
+	width: 95%;
+	height: 112px;
+	background: url("../images/logo_cibertec02.gif") no-repeat 20px 0px;
+	border-bottom: solid 5px #083E88;
+}
+
+.WEB_logoSocrates{
+	width: 136px;
+	height: 30px;
+	position: absolute;
+	background: url("../images/logo_socratesCIB.gif") no-repeat scroll 0 0 transparent;
+	top: 30px;
+	right: 22px;
+}
+
+.botonCIB
+{
+    height: 24px;
+    width:84px;
+    background-image:url(../images/imagenBoton.GIF);
+    cursor:pointer;
+    font-family:Verdana;
+    font-size:11px;
+    font-weight:bold;
+    color:#000000;
+    border: none;
+}
+
+.botonCIB2
+{
+    height: 24px;
+    width:84px;
+    background-image:url(../images/imagenBoton4.GIF);
+    cursor:pointer;
+    font-family:Verdana;
+    font-size:11px;
+    font-weight:bold;
+    color:#000000;
+    border: none;
+} 
+
+.botonlargoCIB
+{
+    height: 24px;
+    width:84px;
+    background-image:url(../images/imagenBoton2.GIF);
+    cursor:pointer;
+    font-family:Verdana;
+    font-size:11px;
+    font-weight:bold;
+    color:#000000;
+    border: none;
+    background-repeat:no-repeat;
+}
+
+.botonlargoCIB2
+{
+    height: 24px;
+    width:84px;
+    background-image:url(../images/imagenBoton3.GIF);
+    cursor:pointer;
+    font-family:Verdana;
+    font-size:11px;
+    font-weight:bold;
+    color:#000000;
+    border: none;
+    background-repeat:no-repeat;
+}
+
+.textoNormal{
+	font-size: 13px;
+	font-family: Arial;
+	color: #231F20;
+}
+
+.textoBold{
+	font-size: 13px;
+	font-family: Arial;
+	font-weight: bold;
+	color: #231F20;
+}
+
+.button_login
+{
+    display:none;
+}
+
+.boton_continue
+{
+    height: 24px;
+    width:84px;
+    background-image:url(../images/imagenBoton.GIF);
+    background-repeat:no-repeat;
+    cursor:pointer;
+    font-family:Verdana;
+    font-size:11px;
+    font-weight:bold;
+    color:#000000;
+    border: none;
+}
+
+.aviso{
+	font-size: 13px;
+	font-family: Arial;
+	color: #000000;
+	letter-spacing: 1px;
+	font-weight: bold;
+}
+
+.lnk_grey
+{
+    font-family:Verdana;
+    color:#8B8B8B;
+    font-size:12px;
+    font-style:normal;
+    text-decoration:none;
+}
+
+.WEB_texto55{
+	font: normal 10px Arial, Helvetica, sans-serif;
+	color: #596200;
+}
+
+.WEB_cajaLogin{
+	width: 140px;
+	height: auto;
+	font: normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: Black;
+}
+
+.MensajeError
+{
+    font-family:Arial;
+    font-size:12px;
+    color:#000080;
+    font-weight:bold;
+}
+
+.MensajeErrorLogin
+{
+    font-family:Arial;
+    font-size:12px;
+    color:#000080;
+}
+
+.WEB_texto6{
+	font: bold 12px Arial, Helvetica, sans-serif;
+	color: #8B8B8B;
+	letter-spacing: 1px;
+}
+
+.WEB_texto6 a:link{
+	text-decoration: none;
+	color: #8B8B8B;
+}
+
+.WEB_texto6 a:visited{
+	text-decoration: none;
+	color: #8B8B8B;
+}
+
+.WEB_texto6 a:hover{
+	text-decoration: none;
+	color: #8B8B8B;
+	border-bottom: solid 1px #8B8B8B;
+}
+
+.WEB_texto6 a:active{
+	text-decoration: none;
+	color: #8B8B8B;
+}
